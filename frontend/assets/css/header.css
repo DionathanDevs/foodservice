@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(24, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+    
+}
+
+.logo-image{
+    width: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav{
+    margin: 0 1em;
+}
+
+nav a{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 70px;
+    height: 30px;
+    background-color: rgba(161, 5, 5, 0.952);
+
+    border-radius: 10px;
+     text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
