@@ -1,8 +1,17 @@
 :root{
     --font-family: 'Poppins', sans-serif;
+    --background-primario:  rgb(129, 6, 6);
+    --background-secundario: rgb(204, 3, 3);
+    --background-terciario: white;
+    --background-quarto: rgb(20, 20, 20);
 }
 
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--background-quarto);
 }

@@ -4,7 +4,7 @@ header{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(24, 0, 0);
+    background-color: var(--background-primario);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .logo{
@@ -25,11 +25,11 @@ nav{
 }
 
 nav a{
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 70px;
     height: 30px;
-    background-color: rgb(105, 2, 2);
-
+    background-color: var(--background-secundario);
     border-radius: 10px;
      text-decoration: none;
     color: white;

@@ -1,0 +1,32 @@
+footer{
+    height: 300px;
+    background-color: var(--background-primario);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+}
+
+.content-links{
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--background-terciario);
+}   
+
+footer ul{
+    list-style: none;
+    margin: 2em;
+}
+
+.title-footer{
+    width: 100%;
+    text-align: center;
+    color: var(--background-terciario);
+}
