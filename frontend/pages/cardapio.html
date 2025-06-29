@@ -1,80 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Food Service - Delivery em São José dos Pinhais">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Food Service - Delivery em São José dos Pinhais"
+    />
     <title>Top Food - Delivery em São José dos Pinhais - Cardapio</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/itens.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/itens.css" />
+    <link rel="stylesheet" href="../assets/css/itemModal.css" />
+  </head>
+  <body>
     <header id="header"></header>
     <main>
-        <section>
-            <!-- <div class="sugestoes-item">
+      <section>
+        <!-- <div class="sugestoes-item">
                 <div class="card item">
 
                 </div>
             </div> -->
-            <div class="itens">
-                <div class="item">
-                    <div class="texto-item">
-                        <p>Hamburguer item</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, minus placeat eos exercitationem quod </p>
-                        <p>R$30,00</p>
-                    </div>
-                    <div class="img-item">
-                        <img src="../assets/images/burger-top-food.png">
-                    </div>
-                </div>
-                 <div class="item">
-                    <div class="texto-item">
-                        <p>Hamburguer item</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, minus placeat eos exercitationem quod </p>
-                        <p>R$30,00</p>
-                    </div>
-                    <div class="img-item">
-                        <img src="../assets/images/burger-top-food.png">
-                    </div>
-                </div>
-                 <div class="item">
-                    <div class="texto-item">
-                        <p>Hamburguer item</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, minus placeat eos exercitationem quod </p>
-                        <p>R$30,00</p>
-                    </div>
-                    <div class="img-item">
-                        <img src="../assets/images/burger-top-food.png">
-                    </div>
-                </div>
-                 <div class="item">
-                    <div class="texto-item">
-                        <p>Hamburguer item</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, minus placeat eos exercitationem quod </p>
-                        <p>R$30,00</p>
-                    </div>
-                    <div class="img-item">
-                        <img src="../assets/images/burger-top-food.png">
-                    </div>
-                </div>
-                 <div class="item">
-                    <div class="texto-item">
-                        <p>Hamburguer item</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, minus placeat eos exercitationem quod </p>
-                        <p>R$30,00</p>
-                    </div>
-                    <div class="img-item">
-                        <img src="../assets/images/burger-top-food.png">
-                    </div>
-                </div>
+
+        <div class="itens">
+          <div class="item">
+            <div class="texto-item">
+              <p>Hamburguer item</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                minus placeat eos exercitationem quod
+              </p>
+              <p>R$30,00</p>
             </div>
-        </section>
+            <div class="img-item">
+              <img src="../assets/images/burger-top-food.png" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="texto-item">
+              <p>Hamburguer item</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                minus placeat eos exercitationem quod
+              </p>
+              <p>R$30,00</p>
+            </div>
+            <div class="img-item">
+              <img src="../assets/images/burger-top-food.png" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="texto-item">
+              <p>Hamburguer item</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                minus placeat eos exercitationem quod
+              </p>
+              <p>R$30,00</p>
+            </div>
+            <div class="img-item">
+              <img src="../assets/images/burger-top-food.png" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="texto-item">
+              <p>Hamburguer item</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                minus placeat eos exercitationem quod
+              </p>
+              <p>R$30,00</p>
+            </div>
+            <div class="img-item">
+              <img src="../assets/images/burger-top-food.png" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="texto-item">
+              <p>Hamburguer item</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                minus placeat eos exercitationem quod
+              </p>
+              <p>R$30,00</p>
+            </div>
+            <div class="img-item">
+              <img src="../assets/images/burger-top-food.png" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer"></footer>
+    <div id="modal-item" class="hidden">
+      <div class="modal-header">
+        <img src="../assets/images/burger-top-food.png" alt="" />
+        <span class="close-button">&times;</span>
+      </div>
+
+      <div class="modal-body">
+        <p>Titulo do Hamburguer</p>
+      </div>
+      <div class="modal-info">
+        <p class="modal-price">R$ 30,00</p>
+        <p class="modal-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
+          
+        </p>
+        <input type="search" placeholder="Observações do pedido..." />
+      </div>
+      <div class="modal-extras">
+        <p>Quer adicionar algo?</p>
+        <div class="card-item-modal">
+          <div class="img-item-modal">
+            <img src="" alt="" />
+          </div>
+          <div class="info-item-modal">
+            <p>1 Bacon</p>
+            <p>R$ 10,00</p>
+            <p>Max: 4</p>
+          </div>
+          <button>+</button>
+        </div>
+         <div class="card-item-modal">
+          <div class="img-item-modal">
+            <img src="" alt="" />
+          </div>
+          <div class="info-item-modal">
+            <p>1 Bacon</p>
+            <p>R$ 10,00</p>
+            <p>Max: 4</p>
+          </div>
+          <button>+</button>
+        </div>
+         <div class="card-item-modal">
+          <div class="img-item-modal">
+            <img src="" alt="" />
+          </div>
+          <div class="info-item-modal">
+            <p>1 Bacon</p>
+            <p>R$ 10,00</p>
+            <p>Max: 4</p>
+          </div>
+          <button>+</button>
+        </div>
+         <div class="card-item-modal">
+          <div class="img-item-modal">
+            <img src="" alt="" />
+          </div>
+          <div class="info-item-modal">
+            <p>1 Bacon</p>
+            <p>R$ 10,00</p>
+            <p>Max: 4</p>
+          </div>
+          <button>+</button>
+        </div>
+      </div>
+
+      <div class="modal-button">
+        <p>Avançar</p>
+        <p>R$30,00</p>
+      </div>
+    </div>
+    <script>
+      function abrirModal() {
+        modalContainer.classList.remove("hidden");
+        // Adiciona a classe ao BODY para travar a rolagem do fundo
+        document.body.classList.add("modal-open");
+      }
+
+      function fecharModal() {
+        modalContainer.classList.add("hidden");
+        // Remove a classe do BODY para liberar a rolagem
+        document.body.classList.remove("modal-open");
+      }
+    </script>
     <script src="../js/components/Header.js"></script>
     <script src="../js/components/Footer.js"></script>
-</body>
+  </body>
 </html>

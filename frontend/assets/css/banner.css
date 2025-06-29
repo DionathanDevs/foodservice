@@ -1,9 +1,10 @@
+
 .banner {
   background-image: url(../images/banner-burguer.jpg);
   background-size: cover;
-  width: 100%;
+  width:100vw;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
   background-position: center center; 
   display: flex;
   flex-direction: column;

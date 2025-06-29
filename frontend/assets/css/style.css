@@ -9,7 +9,7 @@
 *{
     margin: 0;
     padding: 0;
-        
+
 }
 
 body{
@@ -18,5 +18,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
