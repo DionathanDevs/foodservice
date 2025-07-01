@@ -3,15 +3,15 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  background-color: rgb(255, 255, 255); /* fundo escuro semi-transparente */
+  height: 100%;
+  background-color: var(--background-terciario); /* fundo escuro semi-transparente */
   z-index: 9999; /* garantir que está acima do header, footer etc. */
   display: flex;
   flex-direction: column;
   
   align-items: center;
   overflow-y: auto; /* permite rolagem se o conteúdo for grande */
- 
+
 }
 
 #modal-item.hidden {
@@ -19,17 +19,15 @@
 }
 
 .modal-header{
-  border: 1px solid black;
     width: 100%;
-    height: 210px;
+    height: 300px;
     display: flex;
     justify-content: center;
-    padding: 1em;
     background: url(../images/burger-top-food.png);
-    background-size: contain;
+    background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
-     background-color: black;
+    border-radius: 0px 0px 10px 10px;
 }
 
 
@@ -40,20 +38,29 @@
 
 .modal-info{
     width: 100%;
-  
-    
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.obs-pedido{
+  height: 80px;
+  width: 95%;
+  border: 1px solid var rgb(156, 153, 153);
+  padding: 0.2em;
 }
 
 .modal-extras{
     width: 100%;
    
-    border: 1px solid rgb(190, 18, 18);
     flex-direction: column;
     display: flex;
 }
 
 .modal-extras p{
-  border: 1px solid rgb(211, 36, 36);
+
 }
 
 .card-item-modal{
@@ -64,24 +71,24 @@
   height: 50px;
   margin: 0;
   padding: 0;
-  border: 1px solid rgb(36, 87, 163);
+ 
 
 }
 .img-item-modal{
   width: 50px;
   height: 50px;
-  border: 1px solid black;
+ 
 }
 
 .img-item-modal img{
   width: 50px;
   height: 50px;
-  border: 1px solid black;
+ 
 }
 .card-item-modal button{
   width: 150px;
   height: 50px;
-  border: 1px solid rgb(197, 18, 18);
+ 
 }
 .info-item-modal{
   display: flex;
@@ -90,13 +97,12 @@
   width: 100vw;
   height: 50px;
   align-items: center;
-  border: 1px solid rgb(0, 0, 0);
+ 
 }
 .info-item-modal p{
   width: 70px;
   height: 20px;
  
-  border: 1px solid rgb(0, 0, 0);
 }
 .modal-button {
   position: fixed;
