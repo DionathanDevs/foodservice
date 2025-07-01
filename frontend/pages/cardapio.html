@@ -149,14 +149,16 @@
       const botaoClose = document.getElementById('close-button')
       item.addEventListener('click', abrirModal)
       botaoClose.addEventListener('click',fecharModal)
+
+      const modal = document.getElementById('modal-item')
       function abrirModal() {
-        modalContainer.classList.remove("hidden");
+        modal.classList.remove("hidden");
         // Adiciona a classe ao BODY para travar a rolagem do fundo
         document.body.classList.add("modal-open");
       }
 
       function fecharModal() {
-        modalContainer.classList.add("hidden");
+        modal.classList.add("hidden");
         // Remove a classe do BODY para liberar a rolagem
         document.body.classList.remove("modal-open");
       }
