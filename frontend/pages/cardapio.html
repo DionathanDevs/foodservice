@@ -27,7 +27,7 @@
             </div> -->
 
         <div class="itens">
-          <div class="item">
+          <div class="item" id="item">
             <div class="texto-item">
               <p>Hamburguer item</p>
               <p>
@@ -96,10 +96,10 @@
       </section>
     </main>
     <footer id="footer"></footer>
-    <div id="modal-item" class="modal-open">
+    <div id="modal-item" class="hidden">
       <div class="modal-header">
        
-        <span class="close-button">&times;</span>
+        <span class="close-button" id="close-button">&times;</span>
       </div>
 
       <div class="modal-body">
@@ -145,6 +145,10 @@
     </div>
     </div>
     <script>
+      const item = document.getElementById('item')
+      const botaoClose = document.getElementById('close-button')
+      item.addEventListener('click', abrirModal)
+      botaoClose.addEventListener('click',fecharModal)
       function abrirModal() {
         modalContainer.classList.remove("hidden");
         // Adiciona a classe ao BODY para travar a rolagem do fundo
