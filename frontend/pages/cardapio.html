@@ -97,73 +97,44 @@
     </main>
     <footer id="footer"></footer>
     <div id="modal-item" class="hidden">
-      <div class="modal-header">
-       
-        <span class="close-button" id="close-button">&times;</span>
+     
       </div>
-
-      <div class="modal-body">
-        <p>Titulo do Hamburguer</p>
-      </div>
-      <div class="modal-info">
-        <p class="modal-price">R$ 30,00</p>
-        <p class="modal-description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          
-        </p>
-        <textarea class="obs-pedido" type="text" placeholder="Observações do pedido..."></textarea>
-      </div>
-      <div class="modal-extras">
-        <p>Quer adicionar algo?</p>
-        <div class="card-item-modal" >
-          <div class="img-item-modal">
-            <img src="../assets/images/burger-top-food.png" alt="" />
-          </div>
-          <div class="info-item-modal">
-            <p>1 Bacon</p>
-            <p>R$ 10,00</p>
-            <p>Max: 4</p>
-          </div>
-          <button>+</button>
-        </div>
-          <div class="card-item-modal" >
-          <div class="img-item-modal">
-            <img src="../assets/images/burger-top-food.png" alt="" />
-          </div>
-          <div class="info-item-modal">
-            <p>1 Bacon</p>
-            <p>R$ 10,00</p>
-            <p>Max: 4</p>
-          </div>
-          <button>+</button>
-        </div>
-
-      <div class="modal-button">
-        <p>Avançar</p>
-        <p>R$30,00</p>
-      </div>
-    </div>
     </div>
     <script>
-      const item = document.getElementById('item')
-      const botaoClose = document.getElementById('close-button')
-      item.addEventListener('click', abrirModal)
-      botaoClose.addEventListener('click',fecharModal)
+   document.addEventListener('DOMContentLoaded', () => {
+          const itemPrincipal = document.getElementById('item'); // Seu item principal para teste
+          if (itemPrincipal) { // Verifica se o elemento existe
+              itemPrincipal.addEventListener('click', abrirModal);
+          }
 
-      const modal = document.getElementById('modal-item')
+          // **NÃO ADICIONAR O LISTENER DO BOTÃO DE FECHAR AQUI**, ele será adicionado dentro do Modal.js,
+          // depois que o HTML dinâmico do modal for inserido.
+      });
+      
+      
+      
+  
+      
+      function fecharModal() {
+        document.getElementById('modal-item').classList.add('hidden'); // Adiciona a classe hidden para esconder o modal
+        document.body.classList.remove('modal-open'); // Remove a classe do body para liberar a rolagem
+    // Não precisa remover o event listener do close-button aqui,
+    // pois ele é adicionado apenas UMA VEZ após o conteúdo ser inserido.
+        removerModal()
+      }
+
+  
       function abrirModal() {
-        modal.classList.remove("hidden");
+        document.getElementById('modal-item').classList.remove("hidden");
         // Adiciona a classe ao BODY para travar a rolagem do fundo
         document.body.classList.add("modal-open");
+        inserirModal()
       }
-
-      function fecharModal() {
-        modal.classList.add("hidden");
-        // Remove a classe do BODY para liberar a rolagem
-        document.body.classList.remove("modal-open");
-      }
+      
+     
     </script>
     <script src="../js/components/Header.js"></script>
     <script src="../js/components/Footer.js"></script>
+    <script src="../js/components/Modal.js"></script>
   </body>
 </html>
